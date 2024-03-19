@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Sans+Pro:wght@600&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .box{
+    border: 5px solid #111;
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+.hero .title{
+    font-size: 40px;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+.hero form input{
+    height: 30px;
+    width: 100%;
+    margin: 10px 0px;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+    padding: 0px 15px;
+}
+.hero form input::placeholder{
+    text-align: start;
+    font-weight: 500;
+    position: relative;
+}
+.hero form textarea{
+    resize: none;
+    border: 2px solid #111;
+    border-radius: 6px;
+    height: 80px;
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+    padding: 0px 15px;
+}
+.hero form textarea::placeholder{
+    text-align:start;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0px;
+}
+.hero .box button{
+    height: 25px;
+    width: 170px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #111;
+    transition: all .5s ease-in-out;
+    padding: 2px;
+    border-radius: 6px;
+    outline: none;
+    overflow: hidden;
+}
+.hero .box button:hover{
+    background: #111;
+    color: #fff;
+}
+.hero .box a{
+    font-size: 16px;
+    display: inline-block;
+    padding: 0px 10px;
+}
+@media(max-width: 550px){
+    .hero .box{
+        border: 5px solid #111;
+        padding: 30px 40px;
+        border-radius: 10px;
+    }
+    .hero .title{
+        font-size: 30px;
+        font-family: 'Ubuntu',sans-serif;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+        margin-bottom: 7px;
+    }
+}
